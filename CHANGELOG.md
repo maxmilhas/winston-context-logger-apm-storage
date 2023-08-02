@@ -1,3 +1,10 @@
+## [1.0.2](https://github.com/maxmilhas/winston-context-logger-apm-storage/compare/v1.0.1...v1.0.2) (2023-08-02)
+
+
+### Bug Fixes
+
+* treating root onContextEnd error ([48a9d11](https://github.com/maxmilhas/winston-context-logger-apm-storage/commit/48a9d11f8cfea280a499e9b5767fc9ce8aa4b81e))
+
 ## [1.0.1](https://github.com/maxmilhas/winston-context-logger-apm-storage/compare/v1.0.0...v1.0.1) (2023-08-02)
 
 
