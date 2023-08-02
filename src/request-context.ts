@@ -58,6 +58,17 @@ function createSubContext(
 	return context;
 }
 
+function addMeta(context: RequestContext, key: string, value: unknown) {
+	let loggerContext = context.privateMeta.get(loggerContextSymbol) as
+		| Record<string, unknown>
+		| undefined;
+	if (!loggerContext) {
+		loggerContext = {};
+		context.privateMeta.set(loggerContextSymbol, loggerContext);
+	}
+	loggerContext[key] = value;
+}
+
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 export type Func = (...args: any[]) => any;
 const rootContext = new RequestContext('root', 'root');
@@ -87,6 +98,7 @@ export class ApmContextProvider<T extends object>
 					loggerContextSymbol
 				] = context;
 				monkeyPatchOnEnd(transaction, context);
+				addMeta(context, 'traceId', transaction.ids['trace.id']);
 			}
 		}
 		const subStorage = context[subStorageSymbol];
