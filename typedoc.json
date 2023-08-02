@@ -1,21 +1,12 @@
 {
   "hideGenerator": true,
-  "theme": "markdown",
+  "theme": "default",
   "out": "docs",
   "readme": "none",
-  "name": "fluent-iterable",
+  "name": "winston-context-logger-apm-storage",
   "includeVersion": true,
   "disableSources": true,
   "entryPoints": ["src/index.ts"],
   "exclude": [
-    "src/fluentFunctions.ts",
-    "src/fluentAsyncFunctions.ts",
-    "src/sync/**",
-    "src/async/**",
-    "src/recipes/**",
-    "src/types-internal/**",
-    "src/helpers/**",
-    "src/mounters/**",
-    "index.ts"
   ]
 }
