@@ -89,8 +89,10 @@ export class ApmContextProvider<T extends object>
 
 	onContextEnd(callback: () => void): void {
 		(
-			this.currentContext().privateMeta[onContextEndSymbol] as Array<() => void>
-		).push(callback);
+			this.currentContext().privateMeta[onContextEndSymbol] as
+				| Array<() => void>
+				| undefined
+		)?.push(callback);
 	}
 
 	flush() {
