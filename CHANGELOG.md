@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/maxmilhas/winston-context-logger-apm-storage/compare/v1.0.2...v1.1.0) (2023-08-02)
+
+
+### Features
+
+* updating README and creating subContext feature ([4d382f7](https://github.com/maxmilhas/winston-context-logger-apm-storage/commit/4d382f78d1b31b9ce42d4ccdb5f4c8cacb12e537))
+
 ## [1.0.2](https://github.com/maxmilhas/winston-context-logger-apm-storage/compare/v1.0.1...v1.0.2) (2023-08-02)
 
 
