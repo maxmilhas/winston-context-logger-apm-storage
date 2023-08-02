@@ -1,3 +1,10 @@
+# [1.2.0](https://github.com/maxmilhas/winston-context-logger-apm-storage/compare/v1.1.0...v1.2.0) (2023-08-02)
+
+
+### Features
+
+* adding traceId to log ([5266a0b](https://github.com/maxmilhas/winston-context-logger-apm-storage/commit/5266a0ba4c7c578e75d7022752cb5decc797034c))
+
 # [1.1.0](https://github.com/maxmilhas/winston-context-logger-apm-storage/compare/v1.0.2...v1.1.0) (2023-08-02)
 
 
