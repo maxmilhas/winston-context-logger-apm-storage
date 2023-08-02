@@ -1,0 +1,52 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "strict": true,
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "declaration": true,
+    "strictNullChecks": true,
+    "removeComments": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "importsNotUsedAsValues": "remove",
+    "target": "es2020",
+    "sourceMap": true,
+    "outDir": "./dist",
+    "noImplicitAny": true,
+    "alwaysStrict": true,
+    "useUnknownInCatchVariables": true,
+    "strictBindCallApply": true,
+    "strictFunctionTypes": true,
+    "noUncheckedIndexedAccess": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "paths": {
+      "@application/*": [
+        "./src/application/*"
+      ],
+      "@domain/*": [
+        "./src/domain/*"
+      ],
+      "@config/*": [
+        "src/config/*"
+      ],
+      "@infrastructure/*": [
+        "./src/infrastructure/*"
+      ],
+      "@entrypoint/*": [
+        "./src/entrypoint/*"
+      ],
+      "@ioc-providers": [
+        "./src/ioc-providers/index"
+      ],
+      "@root/*": [
+        "./*"
+      ],
+      "test/*": [
+        "./test/*",
+      ]
+    }
+  }
+}
